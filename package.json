@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "author": "",
   "license": "ISC",
@@ -23,5 +24,7 @@
     "url": "https://github.com/rbraun04/ThingsToRemember/issues"
   },
   "homepage": "https://github.com/rbraun04/ThingsToRemember#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
