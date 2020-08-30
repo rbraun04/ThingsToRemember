@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "node": "^14.8.0",
+    "uuid": "^8.3.0"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/rbraun04/ThingsToRemember/issues"
   },
-  "homepage": "https://github.com/rbraun04/ThingsToRemember#readme"
+  "homepage": "https://github.com/rbraun04/ThingsToRemember#readme",
+  "devDependencies": {}
 }

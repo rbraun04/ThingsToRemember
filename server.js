@@ -3,10 +3,16 @@ const express = require("express");
 //using express on this server
 const app = express();
 
-const PORT = process.envPORT || 3030;
+const PORT = process.env.PORT || 8080;
 
-require("./routes/api")(app);
-require("./routes/html")(app);
+
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static('public'));
+
+require("./routes/api-routes")(app);
+require("./routes/html-routes")(app);
 
 app.listen(PORT, function() {
     console.log("App listening on PORT; " + PORT);
